@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Header Main -->
+    {% include 'default/shared/header_main.html.twig' %}
+
+    <!-- Sidebar left Main -->
+    {% include 'default/shared/sidebar_main.html.twig' %}
+
+    <div id="page_content">
+        <div id="page_content_inner">
+
+            <h3 class="heading_b uk-margin-bottom">Manteniminto de Equipos</h3>
+
+            <div class="md-card">
+                <div class="md-card-content">
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-1-1">
+                        {{ dump(equipos) }}
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+   
