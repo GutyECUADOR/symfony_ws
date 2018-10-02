@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Header Main -->
+    {% include 'default/shared/header_main.html.twig' %}
+
+    <!-- Sidebar left Main -->
+    {% include 'default/shared/sidebar_main.html.twig' %}
+
+    <div id="page_content">
+        <div id="page_content_inner">
+            <div class="md-card">
+                <div class="md-card-content">
+
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        
+    
+
+{% endblock %}
+   
