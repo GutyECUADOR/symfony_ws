@@ -66,7 +66,7 @@ class Equipo
     /**
      * @var bool
      *
-     * @ORM\Column(name="isActivo", type="boolean")
+     * @ORM\Column(name="isActivo", type="boolean", nullable=true)
      */
     private $isActivo;
 
