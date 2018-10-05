@@ -11,11 +11,44 @@
         <div id="page_content_inner">
             <div class="md-card">
                 <div class="md-card-content">
-
+                    <h3 class="heading_a">Informacion de Equipo</h3>
                     {{ form_start(form) }}
-                    {{ form_widget(form) }}
+                    {{ form_widget(form)}}
+
                     {{ form_end(form) }}
 
+                </div>
+            </div>
+
+            <div class="md-card">
+                <div class="md-card-content">
+                    <h3 class="heading_a">Input fields</h3>
+                    <div class="uk-grid" data-uk-grid-margin>
+                        <div class="uk-width-medium">
+                            <div class="uk-form-row">
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label>Label</label>
+                                        <input type="text" class="md-input" />
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label>Label fixed</label>
+                                        <input type="text" class="md-input label-fixed" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-form-row">
+                                <label>Passsword</label>
+                                <input type="password" class="md-input"  />
+                            </div>
+                            <div class="uk-form-row">
+                                <label>Disabled</label>
+                                <input type="text" class="md-input" disabled />
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
